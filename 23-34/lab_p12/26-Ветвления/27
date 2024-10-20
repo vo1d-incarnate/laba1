@@ -1,0 +1,13 @@
+#! /bin/bash
+catalog="/afs/dcti.sut.ru/homes/students/"
+user_search() {
+    if find "$catalog" -name "$1" &>/dev/null
+    then
+        echo "User $1 found"
+    else
+        echo "User $1 not found"
+    fi
+}
+user_search ikts91n43
+user_search ikts81n03
+user_search ikts51n43

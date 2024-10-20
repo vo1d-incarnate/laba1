@@ -1,0 +1,17 @@
+#!/bin/bash
+password="hello"
+read -sp "Enter password " any_password
+echo
+if [ "$any_password" == "$password" ]
+then
+    echo "Correct"
+    sleep 4
+    echo "Hello World!"
+    echo "Hello world!" > hello
+else
+    echo "Wrong"
+    if [ -f hello ]
+    then
+        cat hello
+    fi
+fi

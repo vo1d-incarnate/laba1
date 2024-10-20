@@ -1,0 +1,4 @@
+#! /bin/bash
+head -n 3 $"new_1.txt" > new
+tail -n 1 $"new_1.txt"
+

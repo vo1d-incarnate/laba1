@@ -1,0 +1,11 @@
+#!/bin/bash
+a=9
+b=11
+if [ $a -lt $b ]
+then
+c=$((b-a))
+echo "true, $b - $a = $c"
+else
+c=$((a-b))
+echo "false, $a - $b = $c"
+fi
